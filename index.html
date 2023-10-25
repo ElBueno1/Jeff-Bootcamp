@@ -13,26 +13,23 @@
     Level 1
     </button>
     <button type="button" id="button3" onclick="Button3()">level 2</button>
-    <spcript>
+    <script>document.getElementById("button1").addEventListener("click", Button);
 
-document.getElementById("button1").addEventListener("click", Button);
-
-function Button() {
-	document.getElementById("hello").innerHTML = "The Game"
-}
-document.getElementById("button2").addEventListener("click", Button2)
-function Button2() {
-	document.getElementById("first level").innerHTML = "Here is where you find the truth"
-}
-function Button3() {
-  var x = document.getElementById("button3");
-  var x = document.createElement("button");
-  var link = document.createElement('a');
-  link.href = 'https://www.playvalorant.com';
-  link.textContent = 'The Truth!';
-  document.body.appendChild(link);
-  }
-    </spcript>
+        function Button() {
+            document.getElementById("hello").innerHTML = "The Game"
+        }
+        document.getElementById("button2").addEventListener("click", Button2)
+        function Button2() {
+            document.getElementById("first level").innerHTML = "Here is where you find the truth"
+        }
+        function Button3() {
+          var x = document.getElementById("button3");
+          var x = document.createElement("button");
+          var link = document.createElement('a');
+          link.href = 'https://www.playvalorant.com';
+          link.textContent = 'The Truth!';
+          document.body.appendChild(link);
+          }</script>
     <style>
         button{
   background-color: #4CAF50;
